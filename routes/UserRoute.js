@@ -1,9 +1,9 @@
 const express=require('express');
 const router = express.Router();
 
-let users=["abolfazl"];
+let users=[{name:"abolfazl"},{name:"ali"}];
 router.get('/user', (req, res, next) => {
-    res.status(200).send(users.map((user)=>{name:user}));
+    res.status(200).send(users);
 });
 
 router.post('/user', (req, res, next) => {

@@ -4,7 +4,7 @@ const app=express();
 const port=process.env.port||3000;
 const User=require("./routes/UserRoute");
 const UserRoute=User.route;
-app.use(bodyParser.json);
+app.use(bodyParser.json());
 app.use(UserRoute);
 
 app.listen(port,()=>{
