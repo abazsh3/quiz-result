@@ -2,7 +2,8 @@ const express=require('express');
 const bodyParser=require('body-parser');
 const app=express();
 const port=process.env.port||3000;
-const UserRoute=require("./routes/UserRoute");
+const User=require("./routes/UserRoute");
+const UserRoute=User.route;
 app.use(bodyParser.json);
 app.use(UserRoute);
 

@@ -9,4 +9,4 @@ router.get('/user', (req, res, next) => {
 router.post('/user', (req, res, next) => {
     users.push(req.body.name);
 });
-export default router;
+module.exports.route=router;
