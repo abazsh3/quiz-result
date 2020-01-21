@@ -3,7 +3,7 @@ const router = express.Router();
 
 let users=["abolfazl"];
 router.get('/user', (req, res, next) => {
-    res.status(200).send(users);
+    res.status(200).send(users.map((user)=>{name:user}));
 });
 
 router.post('/users', (req, res, next) => {
