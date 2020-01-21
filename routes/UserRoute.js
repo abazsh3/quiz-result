@@ -6,7 +6,7 @@ router.get('/user', (req, res, next) => {
     res.status(200).send(users.map((user)=>{name:user}));
 });
 
-router.post('/users', (req, res, next) => {
+router.post('/user', (req, res, next) => {
     users.push(req.body.name);
 });
 export default router;
